@@ -3,12 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple GIF Page</title>
+  <title>GIF and Fast Switching Images</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .gif-container {
+      margin-bottom: 20px;
+    }
+    .switcher {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+      background-image: url('on.png'), url('off.png');
+      background-size: cover;
+      animation: switch 0.002s infinite alternate; /* Switch images every 2ms */
+    }
+    @keyframes switch {
+      0% {
+        background-image: url('on.png');
+      }
+      100% {
+        background-image: url('off.png');
+      }
+    }
+  </style>
 </head>
 <body>
-  <img src="gif10.gif" alt="A simple GIF">
-    <img src="gif30.gif" alt="A simple GIF">
-    <img src="gif60.gif" alt="A simple GIF">
-    <img src="gif90.gif" alt="A simple GIF">
+  <!-- Existing GIFs -->
+  <div class="gif-container">
+    <img src="gif10.gif" alt="GIF 10">
+    <img src="gif30.gif" alt="GIF 30">
+    <img src="gif60.gif" alt="GIF 60">
+    <img src="gif90.gif" alt="GIF 90">
+  </div>
+
+  <!-- Fast-switching images using CSS -->
+  <div class="switcher"></div>
+
+  <!-- Fast-switching images using JavaScript -->
+  <script>
+    const switcher = document.createElement('img');
+    switcher.src = 'on.png';
+    switcher.alt = 'Fast Switching Image';
+    switcher.style.width = '300px';
+    switcher.style.height = '300px';
+    document.body.appendChild(switcher);
+
+    const images = ['on.png', 'off.png'];
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      switcher.src = images[index];
+    }, 1); // Switch every 1ms
+  </script>
 </body>
 </html>
