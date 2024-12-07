@@ -1,6 +1,6 @@
 // Paths to your images
-const blankImage = 'blank.jpg'; // Replace with the path to your blank image
-const textImage = 'text.jpg';   // Replace with the path to your text image
+const blankImage = 'off.png'; // Replace with the path to your blank image
+const textImage = 'on.png';   // Replace with the path to your text image
 
 // Reference to the image container
 const imageContainer = document.getElementById('image-container');
