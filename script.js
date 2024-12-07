@@ -6,8 +6,8 @@ const textImage = 'on.png';   // Replace with the path to your text image
 const imageContainer = document.getElementById('image-container');
 
 // Timing variables (in milliseconds)
-const subliminalDuration = 0.01;      // Duration to display the text image (e.g., 0.01 ms or 10 μs)
-const subliminalInterval = 1000;      // Interval between displays (e.g., every 1 second)
+const subliminalDuration = 0.001;      // Duration to display the text image (e.g., 0.01 ms or 10 μs)
+const subliminalInterval = 3000;      // Interval between displays (e.g., every 1 second)
 
 // Function to revert to the blank image after the subliminal duration
 function revertToBlankImage(startTime) {
