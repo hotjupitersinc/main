@@ -3,11 +3,11 @@ const blankImage = 'on.png'; // Replace with the path to your blank image
 const textImage = 'gocnn.png'; // Replace with the path to your text image
 
 // Reference to the image container
-const imageContainer = document.getElementById('image-container');
+const imageContainer = document.getElementById('image-container2');
 
 // Timing variables (in milliseconds)
-const subliminalDuration = 0.01; // Duration to display the text image (e.g., 10 ms)
-const subliminalInterval = 3000; // Interval between displays (e.g., every 3 seconds)
+const subliminalDuration = 1; // Duration to display the text image (e.g., 10 ms)
+const subliminalInterval = 1; // Interval between displays (e.g., every 3 seconds)
 
 // Function to display the subliminal message
 function showSubliminalMessage() {
