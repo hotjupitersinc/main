@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subliminal Message Demo</title>
+  <style>
+    /* Style for the image container */
+    #image-container {
+      width: 600px;   /* Adjust to your desired width */
+      height: 200px;  /* Adjust to your desired height */
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0 auto; /* Center the container horizontally */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Image container -->
+  <div id="image-container"></div>
+
+  <!-- Include the JavaScript file -->
+  <script src="script2.js"></script>
+</body>
+</html>
