@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling News Banner</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .news-banner {
+      width: 100%;
+      overflow: hidden;
+      background-color: #333;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      white-space: nowrap;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .news-banner span {
+      display: inline-block;
+      padding: 10px 50px;
+      animation: scrollNews 10s linear infinite;
+    }
+
+    @keyframes scrollNews {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="news-banner">
+    <span>Breaking News: AI technology is transforming industries worldwide! 🚀</span>
+    <span>Latest Update: Global markets show signs of recovery. 📈</span>
+    <span>Weather: Sunny skies expected tomorrow. ☀️</span>
+    <span>Sports: Local team wins championship! 🏆</span>
+  </div>
+</body>
+</html>
