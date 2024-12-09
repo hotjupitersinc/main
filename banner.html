@@ -18,7 +18,7 @@
 
     .wide-image {
       width: 100%;
-      height: 200px; /* Adjust height as needed */
+      height: 50vh; /* Image now takes 50% of the viewport height */
       background: url('./cnn.png') no-repeat center center;
       background-size: cover;
     }
@@ -53,7 +53,7 @@
     .news-banner span {
       display: inline-block;
       padding: 10px 50px;
-      animation: scrollNews 10s linear infinite;
+      animation: scrollNews 20s linear infinite; /* Increased duration to slow down */
     }
 
     @keyframes scrollNews {
@@ -68,13 +68,13 @@
 </head>
 <body>
 
-  <!-- Full-width image section -->
+  <!-- Enlarged Full-width image section -->
   <div class="wide-image"></div>
 
   <!-- Scrolling news banner with logo -->
   <div class="container">
     <div class="logo">
-      <img src="https://yt3.googleusercontent.com/n5DRh94eycw6xGcOKTn6LKQwztTwaw24fXPniFTXA3VPgwJaiOFdBwJNtXRHYUf7OdEAk9upwH0=s900-c-k-c0x00ffffff-no-rj" alt="CNN Logo">
+      <img src="./cnn-logo.png" alt="CNN Logo">
     </div>
     <div class="news-banner">
       <span>Breaking News: Critical vulnerability discovered in Windows systems, potentially exposing millions to security risks! 🚀</span>
