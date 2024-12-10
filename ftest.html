@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flickering Numbers</title>
+  <style>
+    /* Basic styling for the body */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    /* Styling for each number */
+    .number {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #333;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+      animation: flicker 1s infinite;
+    }
+
+    /* Flicker animation (default, overridden by inline styles) */
+    @keyframes flicker {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Numbers 1 to 20 -->
+  <div class="number" style="animation: flicker 10s infinite;">1</div>
+  <div class="number" style="animation: flicker 8.5s infinite;">2</div>
+  <div class="number" style="animation: flicker 7s infinite;">3</div>
+  <div class="number" style="animation: flicker 6s infinite;">4</div>
+  <div class="number" style="animation: flicker 5s infinite;">5</div>
+  <div class="number" style="animation: flicker 4s infinite;">6</div>
+  <div class="number" style="animation: flicker 3s infinite;">7</div>
+  <div class="number" style="animation: flicker 2.5s infinite;">8</div>
+  <div class="number" style="animation: flicker 2s infinite;">9</div>
+  <div class="number" style="animation: flicker 1.8s infinite;">10</div>
+  <div class="number" style="animation: flicker 1.6s infinite;">11</div>
+  <div class="number" style="animation: flicker 1.4s infinite;">12</div>
+  <div class="number" style="animation: flicker 1.2s infinite;">13</div>
+  <div class="number" style="animation: flicker 1s infinite;">14</div>
+  <div class="number" style="animation: flicker 0.8s infinite;">15</div>
+  <div class="number" style="animation: flicker 0.5s infinite;">16</div>
+  <div class="number" style="animation: flicker 0.3s infinite;">17</div>
+  <div class="number" style="animation: flicker 0.1s infinite;">18</div>
+  <div class="number" style="animation: flicker 0.05s infinite;">19</div>
+  <div class="number" style="animation: flicker 0.01s infinite;">20</div>
+</body>
+</html>
