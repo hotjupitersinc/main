@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High-Accuracy Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .timer {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .note {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="timer" id="timer">0.000000 ms</div>
+  <script>
+    const timerElement = document.getElementById('timer');
+    const start = performance.now();
+
+    function updateTimer() {
+      const elapsed = performance.now() - start;
+      timerElement.textContent = `${elapsed.toFixed(6)} ms`;
+      requestAnimationFrame(updateTimer);
+    }
+
+    updateTimer();
+  </script>
+</body>
+</html>
